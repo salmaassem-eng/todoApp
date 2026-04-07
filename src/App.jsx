@@ -3,6 +3,8 @@ import Home from "./pages/todoapp";
 import Tasks from "./pages/Tasks";
 import Profile from "./pages/Profile";
 import Navbar from "./components/Navbar";
+import Login from   "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+         <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/profile" element={<Profile />} />
 
